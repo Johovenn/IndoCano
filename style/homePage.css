@@ -1,0 +1,332 @@
+/* Navbar */
+:root{
+    --primary-color: #093b4b; 
+    --secondary-color: #68c48c;
+    --background-color: #f8f8f8;
+    --icon-color: #0d60a5;
+}
+  
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: "Rubik", sans-serif;
+    background-image: linear-gradient(to bottom, #fff, #05bfdb);
+}
+  
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(181, 181, 181);
+    padding: 10px 15px 5px 15px;
+    box-sizing: border-box;
+    margin: 0px 60px 0px 60px;
+}
+  
+nav img{
+    width: 75px;
+}
+  
+.greetings{
+    display: flex;
+    align-items: flex-end;
+}
+  
+.greetings p{
+    font-size: 16px;
+    margin-left: 10px;
+}
+   
+ion-icon{
+    font-size: 32px;
+    color: #0d60a5;
+    --ionicon-stroke-width: 40px;
+}
+  
+.nav-logo a i{
+    color: var(--icon-color);
+    font-size: 28px;
+}
+  
+.nav-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    margin-top: 20px;
+    width: 50px;
+}
+  
+.nav-logo:hover {
+    transform: translateY(-5px);
+}
+  
+.nav-logo:hover .text {
+    opacity: 1;
+    cursor: pointer;
+}
+  
+.nav-logo .text {
+    opacity: 0;
+    transition: 0.3s;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+nav h1{
+    color: var(--icon-color);
+    font-family: 'Lilita One', cursive;
+    font-size: 32px;
+    letter-spacing: 1px;
+    font-weight: 200;
+} 
+
+/* diatas tulisan biru */
+.detail{
+    margin-bottom: 40px;
+}
+
+.welcome-username{
+    font-size: 22px;
+}
+
+.name{
+    margin-top: 5%;
+    width: 85%;
+    margin-left: 7%;
+    box-shadow: 0 4px 2px -2px  black;
+    color: var(--primary-color);
+    padding-left: 10px;
+    display: grid;
+    grid-template-columns: repeat(2,80%);
+    padding-bottom: 20px;
+}
+
+.name p{
+    margin-top: -20px;
+    margin-bottom: 30px;
+}
+
+.right{
+    width: fit-content;
+    margin-top: 10px;
+}
+
+.alprog{
+    display: flex;
+}
+
+.alprog label{
+    margin-top: -10px;
+    margin-left: 10px;
+}
+.alprog label h3{
+    margin-right: 20px;
+    margin-top: -3px;
+    margin-left: -10px;
+}
+
+
+/* tulisan biru terang */
+.explanation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.explanation h3{
+    text-align: center;
+    color: var(--icon-color);
+    font-family: 'Rubik', sans-serif;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    width: fit-content;
+    padding: 20px;
+}
+
+
+/* progress bar */
+progress{
+    position: relative;
+    left: 29.5%;
+    transform: translate(-50%, -50%);
+    width: 40vw;
+    height: 30px;
+    transition: width 0.5s ease-in-out;
+}
+
+#progress-bar::-webkit-progress-bar {
+    background-color: #f1f1f1;
+  }
+  
+#progress-bar::-webkit-progress-value {
+    background-color: darkslateblue;
+    transition: width 0.5s ease-in-out;
+}
+  
+#progress-bar::-moz-progress-bar {
+    background-color: darkslateblue;
+    transition: width 0.5s ease-in-out;
+}
+
+/* Your Progress */
+.judul{
+    display: flex;
+    width: 85%;
+    margin-left: 7%;
+    padding-left: 10px;
+    box-shadow: 0px -2px black;
+    margin-bottom: 10px;
+}
+
+.judul h3{
+    font-size: 20px;
+}
+
+.guide .ikon{
+    position: absolute;
+    margin-top: 19px;
+    margin-left: 10px;
+    color: var(--icon-color);
+    font-size: 25px;
+}
+  
+.guide:hover .dropdown-container {
+    margin-left: 300px;
+    display: block;
+    left: 0;
+    margin-top: 10px;
+    width: 500px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.dropdown-container {
+    position: absolute;
+    min-width: 160px;
+    right: 0;
+    background-color: #f8f8f8;
+    border-radius: 20px;
+    outline: 2px solid #d7d7d7;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: 0.3s;
+    display: none;
+    padding-left: 20px;
+}
+
+
+.dropdown-container span {
+    font-family: "Rubik", sans-serif;
+    font-weight: 600;
+    color: grey;
+    margin-left: 6px;
+}
+
+/* dibawah teks biru */
+.name1{
+    display: grid;
+    grid-template-columns: repeat(2,85%);
+    align-items: center;
+    width: 85%;
+    margin-left: 7%;
+    color: var(--primary-color);
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+button{
+    padding: 15px 20px;
+    font-family: Rubik, sans-serif;
+    border: none;
+    font-size: 15px;
+    color: black;
+    font-weight: 600;
+    border-radius: 20px;
+    cursor: pointer;
+    outline: none;
+    background: orange;
+    margin-left: 20px;
+    width: fit-content;
+    transition: 0.3s ease;
+}
+
+button:hover{
+    background-color: rgb(205, 126, 0);
+    transition: 0.3s ease;
+}
+
+.label{
+    width: 12ch;
+}
+
+.name1 a{
+    width: fit-content;
+}
+
+.name1 label{
+    font-size: 18px;
+}
+
+#progress-bar1,
+#progress-bar2,
+#progress-bar3,
+#progress-bar4,
+#progress-bar5{
+    position: relative;
+    left: 29%;
+    transform: translate(-50%, -50%);
+    width: 40vw;
+    height: 30px;
+    transition: width 0.5s ease-in-out;
+}
+
+#progress-bar1::-webkit-progress-bar,
+#progress-bar2::-webkit-progress-bar,
+#progress-bar3::-webkit-progress-bar,
+#progress-bar4::-webkit-progress-bar,
+#progress-bar5::-webkit-progress-bar 
+{
+
+    background-color: #f1f1f1;
+}
+  
+#progress-bar1::-webkit-progress-value,
+#progress-bar2::-webkit-progress-value, 
+#progress-bar3::-webkit-progress-value, 
+#progress-bar4::-webkit-progress-value, 
+#progress-bar5::-webkit-progress-value{
+    background-color: darkslateblue;
+    transition: width 0.5s ease-in-out;
+}
+  
+#progress-bar1::-moz-progress-bar,
+#progress-bar2::-moz-progress-bar,
+#progress-bar3::-moz-progress-bar,
+#progress-bar4::-moz-progress-bar,
+#progress-bar5::-moz-progress-bar {
+    background-color: darkslateblue;
+    transition: width 0.5s ease-in-out;
+}
+
+.alprog1{
+    display: flex;
+    margin-top: 30px;
+}
+
+.alprog1 label{
+    margin-top: -10px;
+    margin-left: 30px;
+}
+
+.change{
+    margin-top: 20px;
+    margin-left: 7%;
+}

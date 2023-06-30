@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+    background: linear-gradient(#ffffff, #05BFDB);
+    font-family: 'Rubik',sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+#logo{
+    position:  absolute;
+    top: 0px;
+    left: 0px;
+    width: 75px;
+}
+
+.page-title{
+    font-size: 32px;
+    margin-top: 25px;
+    font-weight: 500;
+}
+
+.page-note{
+    margin-bottom: 50px;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 5px 5px rgb(174, 174, 174);
+}
+
+.province-img{
+    width: 200px;
+    height: 130px;
+    border-radius: 15px;
+}
+
+.province-name{
+    font-size: 20px;
+    font-weight: 400;
+    margin: 10px 0 5px 0;
+}
+
+.progress{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+progress{
+    margin-right: 5px;
+}
+
+.enroll-btn{
+    background-color: #FFB039;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    transition: 0.3s;
+}
+
+.enroll-btn:hover{
+    background-color: #fea622;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.closed img{
+    filter: grayscale(100%);
+}
+
+.closed button{
+    background-color: grey;
+}
+
+.closed button:hover{
+    background-color: grey;
+}
+
+.closed{
+    background-color: rgb(233, 233, 233);
+}

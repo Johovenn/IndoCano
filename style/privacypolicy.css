@@ -1,0 +1,350 @@
+:root{
+    --primary-color: #093b4b; 
+    --secondary-color: #68c48c;
+    --background-color: #f8f8f8;
+    --icon-color: #0d60a5;
+}
+
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: "Rubik", sans-serif;
+    background-image: linear-gradient(to bottom, #fff, #05bfdb);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(181, 181, 181);
+    padding: 10px 15px 5px 15px;
+    box-sizing: border-box;
+    margin: 0px 60px 0px 60px;
+}
+
+nav img{
+    width: 75px;
+}
+
+.greetings{
+    display: flex;
+    align-items: flex-end;
+}
+
+.greetings p{
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.nav-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+}
+
+.navigation{
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ion-icon{
+    font-size: 32px;
+    color: #0d60a5;
+    --ionicon-stroke-width: 40px;
+    padding: 8px 15px 5px;
+  }
+  
+  .active a{
+    background-color: rgba(0, 103, 187, 0.8);
+    border-radius: 5px;
+  }
+  
+  .active ion-icon{
+    color: white;
+  }
+
+.nav-logo a i{
+    color: var(--icon-color);
+    font-size: 28px;
+}
+
+.nav-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    margin-top: 20px;
+}
+  
+.nav-logo:hover {
+    transform: translateY(-5px);
+}
+
+.nav-logo:hover .text {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.nav-logo .text {
+    opacity: 0;
+    transition: 0.3s;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.change-province-button {
+    position: relative;
+    display: inline-block;
+}
+
+.current-province img {
+    width: 40px;
+    padding: 10px;
+    background-color: #8cbeff;
+    border-radius: 15px;
+}
+
+.dropdown-container {
+    position: absolute;
+    right: 0;
+    min-width: 150px;
+    background-color: #f8f8f8;
+    padding: 15px;
+    border-radius: 10px;
+    outline: 2px solid #d7d7d7;
+    transition: 0.3s;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.enrolled-province {
+    display: flex;
+    align-items: center;
+    padding: 8px 8px;
+    width: 150px;
+    background-color: #307e98;
+    border-radius: 10px;
+    justify-content: center;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.enrolled-province img {
+    width: 30px;
+    margin-right: 20px;
+}
+
+.dropdown-container span {
+    font-family: "Rubik", sans-serif;
+    font-weight: 600;
+    color: grey;
+}
+
+.dropdown-container {
+    background-color: #64bcda;
+}
+
+.change-province-button:hover .dropdown-container {
+    display: flex;
+}
+
+.change-province-button:hover .current-province img {
+    background-color: #63a5fb;
+    transition: 0.3s;
+}
+
+.change-province-button .current-province img {
+    transition: 0.3s;
+}
+
+.dropdown-container a{
+    background-color: orange;
+    text-decoration: none;
+    color: black;
+    padding: 6px 8px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.dropdown-container a:hover{
+    background-color: rgb(224, 146, 0);
+    transition: 0.3s;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 87.67%;
+    position: relative;
+}
+
+.container{
+    position: absolute;
+    display: flex;
+    top: 50px;
+    width: 800px;
+    height: 500px;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: transparent;
+}
+
+.sidebar {
+    width: 180px;
+    border-right: 1px solid black;
+    position: relative;
+}
+  
+.sidebar ul {
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+}
+  
+.sidebar li {
+    padding: 8px;
+    position: relative;
+    margin-bottom: 5px;
+    border: 1px solid transparent;
+}
+
+.sidebar li:nth-child(4) a{
+    color: #13558b;
+}
+
+.sidebar li:nth-child(4){
+    background-color: #bfe0ec;
+    border-radius: 10px;
+    border: 1px solid #1a6eb3;
+}
+  
+.sidebar li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.hover-effect:hover{
+    background-color: rgb(211, 210, 210);
+    border-radius: 10px;
+    border: 1px solid rgb(136, 136, 136);
+}
+
+.log-out-button{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    color: black;
+    padding: 10px 10px;
+    border: 1px solid transparent;
+    background-color: rgb(255, 71, 71);
+    border-radius: 10px;
+    transition: 0.3s;
+    font-family: "Rubik", sans-serif;
+}
+
+.log-out-button:hover{
+    background-color: rgb(255, 37, 37);
+    border-radius: 10px;
+    border: 1px solid black;
+    transition: 0.3s;
+}
+
+.popup-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.confirmation{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.exit-icon{
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.description{
+    font-size: 14px;
+    color: rgb(183, 183, 183);
+    text-align: center;
+}
+
+dialog::backdrop{
+    background-color: rgba(147, 146, 146, 0.4);
+}
+
+dialog{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 200px;
+    width: 250px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    display: none;
+}
+
+.buttons{
+    width: 130px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 50px;
+    font-family: "Rubik", sans-serif;
+    transition: 0.3s;
+}
+
+#no-btn{
+    background-color: rgb(186, 186, 186);
+}
+
+#no-btn:hover{
+    background-color: rgb(173, 173, 173);
+    transition: 0.3s;
+}
+
+#yes-btn{
+    background-color: orange;
+}
+
+#yes-btn:hover{
+    background-color: rgb(234, 152, 0);
+    transition: 0.3s;
+}
+
+.content{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 620px;
+    height: 450px;
+    overflow-y: scroll;
+}
+
+.title{
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
